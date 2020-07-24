@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-App</title>
+</head>
+<style>
+body{
+    text-align: center;
+    background-image: linear-gradient(to right, #E878DA , #58AAC6);
+    font-family: sans-serif;
+}
+#to_do_item{
+   
+    font-size: 20px;
+    padding: 10px 50px 10px 50px;
+    border-radius: 10px;
+    border-color: #E878DA;
+}
+#todo-task button{
+    background-color:#E878DA ;
+    border-color: black;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+    font-weight: bolder;
+    font-size: 20px;
+    color:white ;
+}
+.btn1{
+    border-radius: 5px;
+    background-color:#E878DA;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    margin-left:10px ;
+}
+.btn2{
+    border-radius: 5px;
+    background-color:#E878DA;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    margin-left:10px ;
+}
+.main_list{
+    background-color: white;
+}
+#heading{
+    color: white;
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+.main_list ol li{
+     padding-top: 15px;
+     border-bottom: 1px dotted #E878DA;
+}
+
+</style>
+<body>
+
+    <p id="heading">TO-DO APP   <img src="img/logo.png"  width="50px"  alt=""> </p>
+    
+         <div id="todo-task">
+                 <input placeholder="Enter To-do" id="to_do_item" type="text"> <br>
+                 <button onclick="addTodo()">Add Task</button>
+                 <button onclick="deleteall()">Delete All</button>
+         </div>
+
+         <div class="main_list">
+                 <ol id="list">
+
+                 </ol>
+         </div>
+
+
+</body>
+<script src="app.js"></script>
+</html>
